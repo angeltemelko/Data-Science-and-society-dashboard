@@ -253,12 +253,3 @@ unemployment_and_sales_fig = get_figure_image(Image.open('plots/Correlation Unem
 #Get the number of stores
 typecounts = trainData.Type.value_counts().to_dict()
 pieFigData = pd.DataFrame(list(typecounts.items()), columns=['Store_Type', 'Counts'])
-# pieFig = px.pie(pieFigData, values='Counts', names='Store_Type',title='Popularity of Store Types',labels='Store_Type')
-
-# pieFig = go.Pie(labels=["Type"],values=df,
-#                         hoverinfo="label+value+percent",
-#                         textinfo="label+value",
-#                         textfont=dict(size=13),
-#                         hole=.7,
-#                         rotation=45)
-#pieFig.update_traces(textposition='inside', textinfo='percent+label')
