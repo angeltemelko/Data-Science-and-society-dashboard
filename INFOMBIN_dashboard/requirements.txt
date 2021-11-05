@@ -1,0 +1,9 @@
+psycopg2-binary
+pandas
+dash
+numpy
+matplotlib
+sklearn
+statsmodels
+seaborn
+pillow
