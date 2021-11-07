@@ -194,12 +194,6 @@ plotly_fig = mpl_to_plotly(fig)
 
 
 #From this plot, we can clearly observe that the forecasted line is almost the same as our true line. This conclude that our arima model is perfactly tuned.
-
-
-#Calculating MSE and RMSE for checking accuracy of our model.
-# print('Mean Squared Error:',mean_squared_error(monthly_sales['2010-02-28':],pred.predicted_mean))
-# print('Root Mean Squared Error:',np.sqrt(mean_squared_error(monthly_sales['2010-02-28':],pred.predicted_mean)))
-
 test=trainData.copy()
 test.index=pd.to_datetime(test.Date)
 
